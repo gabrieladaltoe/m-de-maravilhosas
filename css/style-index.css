@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+ul, li {
+    list-style: none;
+  }
+  
+a {
+    text-decoration: none;
+  }
+  
+.container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+/*navegacao*/
+
+.nav {
+    background-color: #674582;
+    width: 100%;
+    height: 50px;
+}
+
+.nav__container {
+    display: flex;
+    align-content: center;
+
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
+.nav__menu_item {
+    display: none;
+}
+
+.nav__menu_hamburger {
+    display: flex;
+}
+
+.social-media {
+    display: none;
+}
+
+
+/*Main*/
+
+.main-content__home {
+    text-align: center;
+}
+
+.mulher-img {
+    width: 200px;
+    height: auto;
+}
