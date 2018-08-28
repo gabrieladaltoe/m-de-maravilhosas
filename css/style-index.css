@@ -28,7 +28,7 @@ a {
 
 h1 {
     Font-family: 'Montserrat';
-    font-style: bold;
+    font-weight: bold;
     Font-Size: 2.2rem;   
     Line-height: 2.4rem;
     text-align: Left;
@@ -58,10 +58,19 @@ h5{
     color: #fff;
 }
 
+h6{
+    Font-family: 'Montserrat';
+    font-style: bold;
+    Font-Size: 1.8rem;   
+    Line-height: 2rem;
+    text-align: center;
+    color: #674582;
+}
+
 p {
     Font-family: 'Montserrat';
-    Font-Size: 1.2rem;   
-    Line-height: 1.6rem;
+    Font-Size: 1.3rem;   
+    Line-height: 1.8rem;
     color: #674582;
 }
 
@@ -153,6 +162,28 @@ p {
     padding-top: 50px;
 }
 
+/*header profile*/
+
+.header__profile {
+    background: url("../img/header-kath.png");
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    margin-top: 59px;
+    background-position: center;
+}
+
+.header__profile_text {
+    display: flex;
+    justify-content: center;
+    padding-top: 240px;
+    text-transform: uppercase;
+}
+
 /*Main*/
 
 .main-content__home {
@@ -188,6 +219,92 @@ p {
     margin: 10px 0;
 }
 
+/*main-profile*/
+
+
+.article__title {
+    max-width: 300px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.article__intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;    
+}
+
+.img-article-profile {
+    width: 100%;
+    height: auto;
+}
+
+.article__intro__text{
+    margin: 15px auto;
+}
+
+.article__quote {
+    width: 100%;
+    border: 1px solid #674582;
+    padding: 20px;
+    text-align: center;
+}
+
+.article__story {
+    text-align: left;
+}
+
+.article__story_title{
+    text-align: left;
+    margin: 15px auto;
+}
+
+.img-kath-type {
+    margin: 20px 0;
+}
+
+/*profile dev*/
+
+.profile__dev {
+    background-color: #e5e5e5;
+    padding: 25px;
+    margin: 35px auto 0 auto;
+}
+
+.profile__dev_conteudo {
+    display : flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile__dev_texto{
+    font-weight: bold;
+}
+
+.dev-imagem {
+    width: 100%;
+    height: auto;
+}
+
+.profile__dev_img {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.button__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.kath-type {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
 /*footer*/
 
 .footer__links{
@@ -206,7 +323,7 @@ p {
 }
 
 .logo-img-footer {
-    width: 60%;
+    width: 180px;
 }
 
 .link_facebook{
@@ -283,6 +400,39 @@ p {
         width: 380px;
     }
 
+    /*article profile*/
+
+    .article__intro {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        }
+
+    .img-article-profile {
+        width: 130px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+
+    /*dev profile*/
+
+    .profile__dev {
+        padding: 0px;
+        margin: 35px auto 0 auto;
+    }
+    
+    .profile__dev_conteudo {
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile__dev_img {
+        width: 120px;
+        margin-right: 20px;
+    }
     /*footer*/
 
     .footer__links {
@@ -342,4 +492,18 @@ p {
     .main__content_text-home {
         width: 170px;
     }
+
+    /*dev article*/
+
+    .article__intro {
+        margin: 20px 20px 20px 0;
+    }
+
+    .article__intro__text {
+        margin: 0 50px 0 0;
+    }
+
+    .profile__dev_img {
+        width: 200px;
+        margin-right: 20px;
 }
