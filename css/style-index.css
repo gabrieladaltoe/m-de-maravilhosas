@@ -51,12 +51,20 @@ h3{
     color: #fff;
 }
 
+h5{
+    Font-family: 'Montserrat';
+    Font-Size: 1rem;   
+    Line-height: 1.2rem;
+    color: #fff;
+}
+
 p {
     Font-family: 'Montserrat';
     Font-Size: 1.2rem;   
     Line-height: 1.6rem;
     color: #674582;
 }
+
 .btn {
     background-color: #C083B9;
     color: #fff;
@@ -84,9 +92,14 @@ p {
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 
+/*
 .nav__container {
     display: flex;
     justify-content: space-around;
@@ -94,6 +107,7 @@ p {
     width: 260px;
     margin: 0 auto;
 }
+*/
 
 .logo-img {
     width: 150px;
@@ -112,6 +126,12 @@ p {
     display: none;
 }
 
+.nav_list p {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
 /*Header*/
 
 .header {
@@ -121,6 +141,7 @@ p {
     max-width: 100%;
     height: 300px;
     display: block;
+    margin-top: 59px;
 }
 
 .header__text {
@@ -142,8 +163,15 @@ p {
     margin:3rem;
 }
 
+.main-content__woman-icon{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 250px;
+    
+}
 .mulher-img {
-    width: 180px;
+    width: 100px;
     height: auto;
     background-color: #63458A;
     border-radius: 5px;
@@ -153,9 +181,11 @@ p {
 .main__content_text-home {
     Font-family: 'Montserrat';
     Font-Size: 1.3rem;   
-    Line-height: 4.3rem;
+    Line-height: 1.3rem;
     text-align: center;
     color: #000;
+    width: 100px;
+    margin: 10px 0;
 }
 
 /*footer*/
@@ -166,4 +196,150 @@ p {
 
 .footer__copyright {
     background-color: #292A2A;
+}
+
+.footer_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo-img-footer {
+    width: 60%;
+}
+
+.link_facebook{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__icon-fb {
+    width: auto;
+    height: 28px;
+}
+
+.footer_text-link-fb {
+    color: #fff;
+}
+
+.footer__copyright {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copyright h5{
+    max-width: 300px;
+    font-size: 0.8rem;
+}
+
+
+@media screen and ( min-width: 768px) {
+
+    .container {
+        width: 500px;
+        margin: 0 auto;
+      }
+/*nav*/
+
+.nav__menu_list {
+    display: flex;
+    justify-content: space-around;
+    width: 190px;
+    font-family: 'Montserrat';
+}
+.nav__menu_item {
+    display: flex;
+}
+
+.nav__menu_item a{
+    color: #fff;
+}
+
+.nav__menu_hamburger {
+    display: none;
+}
+
+/*header*/
+
+    .header__text {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column; 
+        align-items: flex-start;
+        padding-top: 65px;
+        padding-right: 25%;
+    }
+
+    .main-content__woman-icon {
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: space-between;
+        width: 380px;
+    }
+
+    /*footer*/
+
+    .footer__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10%;
+        margin-top: 20px;
+    }
+
+    .logo-img-footer {
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media screen and ( min-width: 1024px){
+
+    .container {
+        width: 650px;
+    }
+    /*nav*/
+
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__logo {
+        margin-right: auto;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+    }
+
+    .icon-social-media-nav {
+        width: 18px;
+        height: auto;
+    }
+
+    /*header*/
+
+    .header__text {
+        padding-top: 100px;
+    }
+
+    /*main*/
+
+    .mulher-img {
+        width: 170px;
+    }
+
+    .main__content_text-home {
+        width: 170px;
+    }
 }
