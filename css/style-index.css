@@ -451,6 +451,11 @@ p {
 
 @media screen and ( min-width: 1024px){
 
+    h1 {
+        Font-Size: 3rem;   
+        Line-height: 3.3rem;
+    }
+
     .container {
         width: 650px;
     }
@@ -479,8 +484,16 @@ p {
 
     /*header*/
 
+    .header {
+        height: 500px;
+    }
+
+    .header__profile{
+        height: 350px;
+        background-position-y: -183px;
+    }
     .header__text {
-        padding-top: 100px;
+        padding-top: 150px;
     }
 
     /*main*/
@@ -506,4 +519,5 @@ p {
     .profile__dev_img {
         width: 200px;
         margin-right: 20px;
+}
 }
